@@ -1,46 +1,11 @@
-This is a 0x11. C-printf project done by I and my partner.
-This project is the first team work given to us as ALX Software Engineering students.
+The printf() function sends a formatted string to the standard output (the display). This string can display formatted variables and special control characters, such as new lines ('\n'), backspaces ('\b') and tabspaces ('\t')
 
-All code written will be compiled using $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+printf (print formatted) in C, writes out a cstring to stdout (standard output). The provided cstring may contain format specifiers( beginning with % in the cstring).
 
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
- a Spur for life                                                                    
-Write a function that produces output according to a format.                        
-                                                                                    
-                                                                                    
-1. Education is when you read the fine print. Experience is what you get if you don'
-t                                                                                   
-Handle the following conversion specifiers:
+If there are format specifiers, those are replaced with their respective arguments that follow the cstring to the printf call. These format specifiers may also contain its length, precision, and other flags.
 
-2. With a face like mine, I do better in print                                      
-Handle the following custom conversion specifiers:                                  
-                                                                                    
-3. What one has not experienced, one will never understand in print                 
-Handle the following conversion specifiers:                                         
-                                                                                    
-4. Nothing in fine print is ever good news                                          
-Use a local buffer of 1024 chars in order to call write as little as possible.      
-                                                                                    
-5. My weakness is wearing too much leopard print                                    
-Handle the following custom conversion specifier:                                   
-                                                                                    
-6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
-hese lies when they see them in print                                               
-Handle the following conversion specifier: p.                                       
-                                                                                    
-7. The big print gives and the small print takes away                               
-Handle the following flag characters for non-custom conversion specifiers:          
-                                                                                    
-8. Sarcasm is lost in print                                                         
-Handle the following length modifiers for non-custom conversion specifiers:         
-                                                                                    
-l                                                                                   
-h                                                                                   
-Conversion specifiers to handle: d, i, u, o, x, X                                   
-                                                                                    
-9. Print some money and give it to us for the rain forests                          
-Handle the field width for non-custom conversion specifiers.                        
-                                                                                    
-10. The negative is the equivalent of the composer's score, and the print the perfor
-mance                                                                               
-Handle the precision for non-custom conversion specifiers.
+Syntax
+ int printf (const char* c-string, ...);
+Return Value: If the function successfully executes, it returns the total number of characters written to the standard output. If an error occurs, a negative number is returned.
+
+Arguments: c-string is the string passed to the function. There can be additional arguments following c-string, if there exist format specifiers in the c-string, as discussed above.
